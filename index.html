@@ -1,31 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MindAR Image Tracking</title>
 
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
-  </head>
-  <body>
-    <a-assets>
-  <img
-    id="logo"
-    src="Final1.png"
-  />
-</a-assets>
-<a-entity mindar-image-target="targetIndex: 0">
-  <a-image
-     width="10.24"
-     height="4.46"
-     scale="0.1 0.1 0.1"
-     position="0 0.5 0"
-     src="#logo"
-   >
-   </a-image>
-</a-entity>
+  <!-- A-Frame -->
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
 
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+  <!-- MindAR -->
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 
-     
-    </a-scene>
-  </body>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <a-scene
+    mindar-image="imageTargetSrc: targets.mind;"
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: true"
+  >
+
+    <!-- Camera -->
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+    <!-- Image target -->
+    <a-entity mindar-image-target="targetIndex: 0">
+
+      <!-- Image overlay -->
+      <a-image
+        src="Final1.png"
+        position="0 0 0"
+        width="1"
+        height="1"
+      ></a-image>
+
+    </a-entity>
+
+  </a-scene>
+
+</body>
 </html>
