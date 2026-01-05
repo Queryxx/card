@@ -1,11 +1,11 @@
 Model Information:
-* title:	2025 BMW M4 Competition
-* source:	https://sketchfab.com/3d-models/2025-bmw-m4-competition-f8141ecd755547989c9209784b71ad43
-* author:	Ddiaz Design (https://sketchfab.com/ddiaz-design)
+* title:	[Blue Archive] -Koharu- | CB (Default emotion)
+* source:	https://sketchfab.com/3d-models/blue-archive-koharu-cb-default-emotion-5d97f1aca1494968b4508bae44f88475
+* author:	VückyZ (https://sketchfab.com/vuckyz123)
 
 Model License:
-* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
-* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "2025 BMW M4 Competition" (https://sketchfab.com/3d-models/2025-bmw-m4-competition-f8141ecd755547989c9209784b71ad43) by Ddiaz Design (https://sketchfab.com/ddiaz-design) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+This work is based on "[Blue Archive] -Koharu- | CB (Default emotion)" (https://sketchfab.com/3d-models/blue-archive-koharu-cb-default-emotion-5d97f1aca1494968b4508bae44f88475) by VückyZ (https://sketchfab.com/vuckyz123) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

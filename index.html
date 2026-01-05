@@ -31,17 +31,12 @@
     <!-- Image target -->
     <a-entity mindar-image-target="targetIndex: 0">
 
-      <!-- Video -->
-      <a-plane
+      <!-- 3D Model -->
+      <a-gltf-model
+        src="scene.gltf"
         position="0 0 0"
-        width="1"
-        height="1"
-      >
-        <video controls width="640" >
-          <source src="vid.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </a-plane>
+        scale="1 1 1"
+      ></a-gltf-model>
 
     </a-entity>
 
@@ -49,4 +44,3 @@
 
 </body>
 </html>
-
