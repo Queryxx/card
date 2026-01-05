@@ -16,6 +16,31 @@
       overflow: hidden;
     }
   </style>
+  <script>
+    // Debug GLTF loading
+    window.addEventListener('load', () => {
+      console.log('Page loaded');
+      fetch('scene.gltf')
+        .then(res => {
+          console.log('GLTF fetch status:', res.status);
+          return res.json();
+        })
+        .then(data => console.log('GLTF data:', data))
+        .catch(err => console.error('GLTF fetch error:', err));
+
+      // Listen for GLTF model events
+      setTimeout(() => {
+        const gltfModel = document.querySelector('a-gltf-model');
+        if (gltfModel) {
+          console.log('GLTF Model element found');
+          gltfModel.addEventListener('model-loaded', () => console.log('✓ Model loaded successfully!'));
+          gltfModel.addEventListener('model-error', (e) => console.error('✗ Model error:', e.detail));
+        } else {
+          console.error('GLTF Model element NOT found');
+        }
+      }, 1000);
+    });
+  </script>
 </head>
 <body>
 
@@ -23,7 +48,12 @@
     mindar-image="imageTargetSrc: targets.mind;"
     vr-mode-ui="enabled: false"
     device-orientation-permission-ui="enabled: true"
+    renderer="colorSpace: sRGB"
   >
+
+    <!-- Lighting -->
+    <a-light type="ambient" intensity="0.8" color="#ffffff"></a-light>
+    <a-light type="directional" intensity="0.8" position="0 1 1" color="#ffffff"></a-light>
 
     <!-- Camera -->
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -35,8 +65,8 @@
       <a-gltf-model
         src="scene.gltf"
         position="0 0 0"
-        scale="0.5 0.5 0.5"
-        animation-mixer
+        rotation="0 0 0"
+        scale="0.0001 0.0001 0.0001"
       ></a-gltf-model>
 
     </a-entity>
