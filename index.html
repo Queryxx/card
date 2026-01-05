@@ -32,14 +32,16 @@
     <a-entity mindar-image-target="targetIndex: 0">
 
       <!-- Video -->
-      <a-video
-        src="vid.mp4"
+      <a-plane
         position="0 0 0"
         width="1"
         height="1"
-        autoplay="false"
-        loop="true"
-      ></a-video>
+      >
+        <video controls width="640" autoplay>
+          <source src="vid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a-plane>
 
     </a-entity>
 
@@ -47,4 +49,3 @@
 
 </body>
 </html>
-
